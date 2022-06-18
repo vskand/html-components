@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root {
+	--colorLight: #dddddd;
+	--colorDark: #222831;
+	--colorMain: #30475E;
+	--colorAccent: #F05454;
+	--fontFamily: 'Poppins', sans-serif;
+}
+
+body {
+	font-family: var(--fontFamily);
+}
+/* GENERAL */
+.v-image-full-width {
+	width: 100%;
+}
+/* // GENERAL */
+
+/* CARDS */
+.v-cards {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px 50px;
+	padding: 5vw 7vw;
+	background-color: var(--colorDark);
+}
+.v-card {
+	width: clamp(320px, 25vw, 650px);
+	padding: clamp(15px, 3vw, 60px) clamp(10px, 2vw, 40px);
+	background-color: var(--colorLight);
+	border-radius: 20px;
+	color: var(--colorMain);
+}
+.v-card-header {
+	display: flex;	
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px 20px;
+	margin-bottom: clamp(20px, 2rem, 40px);
+	color: #000;
+}
+.v-card-header img {
+	border-radius: 50%;
+}
+.v-card-content {
+	margin-bottom: clamp(20px, 2rem, 40px);
+}
+.v-card-content p {
+	font-family: inherit;
+	margin: 5px 0;
+}
+.v-card-content a {
+	font-family: inherit;
+	color: var(--colorDark);
+}
+.v-card-content a:hover {
+	color: var(--colorAccent);	
+}
+.v-card-content img {
+	margin: 10px 0;
+}
+.v-card-content button {	
+	margin: 20px 0;
+	font-family: inherit;
+}
+.v-card-footer {
+	color: var(--colorAccent);
+}
+
+
+/* // CARDS */
